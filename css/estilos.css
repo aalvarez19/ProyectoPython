@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#banner {
+
+    background-color: #cccccc;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.botonLogin {
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+
+}
+
+a {
+    padding: 10px;
+}
+
+.box-redes a{
+    width: 43px;
+    height: 50px;
+    background-color: #62A6E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+header {
+    background-color: #88B4E5;
+  
+}
+
+.botonDescubrila {
+    background-color: #2B4015;
+    padding: 10px;
+    margin: 100px;
+    display: inline-block;
+
+}
+
+footer{
+    background-color: #758812;
+  text-align: center;
+}
