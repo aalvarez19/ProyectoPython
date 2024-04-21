@@ -73,3 +73,93 @@ footer{
     background-color: #758812;
   text-align: center;
 }
+.pagina-contacto
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    background-image: url(/img/cataratas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    padding: 20px;
+}
+footer {
+    background-color: rgba(255,255, 255, 0.1); /* Fondo semi-transparente */
+    padding: 20px;
+}
+ h2, header, footer,
+p {
+    text-align: center;
+    color: white; 
+    background-color: #62A6E7;
+    display:block;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.formulario-contacto {
+    background-color: rgba(255, 255, 255, 0.8); 
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.formulario-contacto .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.formulario-contacto .col-25 {
+    flex: 25%;
+    margin-right: 10px;
+}
+
+.formulario-contacto .col-75 {
+    flex: 75%;
+}
+
+.formulario-contacto input[type=text],
+.formulario-contacto input[type=email],
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.formulario-contacto input[type=submit] {
+    background-color: #62A6E7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.formulario-contacto input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 600px) {
+    .formulario-contacto .col-25, .formulario-contacto .col-75, .formulario-contacto input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
