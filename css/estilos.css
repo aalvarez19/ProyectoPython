@@ -218,4 +218,28 @@ p {
     background-color: #45a049;
 }
 
+.colordefondo{
+    margin: 0;
+    padding: 1%;
+    background-color: #2B4015;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 
+    
+}
+
+.immg{
+    text-align: center;
+    background-color:#2B4015;
+    border-radius: 2%;
+    box-shadow: #2B4015;
+}
+
+.h2color{
+    padding: 2%;
+    background-color: #DAD89D;
+    color: #2B4015;
+}
