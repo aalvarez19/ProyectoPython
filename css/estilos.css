@@ -11,24 +11,23 @@
 }
 
 #banner {
-
     background-color: #cccccc;
-    height: 1000px;
+    background-image: url("./img/cataratas-del-iguazu-lado-argent.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 1000px;
     position: relative;
+    text-align: center; /* Centra horizontalmente los elementos dentro de #banner */
 }
 
 h1 {
-    text-align: center;
     font-size: 50px;
     font-weight: bold;
     padding: 10%;
 }
 
 h2 {
-    text-align: center;
     font-size: 30px;
     font-style: italic;
 }
@@ -39,26 +38,39 @@ h2 {
     padding: 10px;
     margin: 10px;
     display: inline-block;
-
 }
 
 a {
     padding: 10px;
 }
 
-.box-redes a{
-    width: 43px;
-    height: 50px;
+#banner a {
+    color: white;
+    text-decoration: none;
+}
+
+.box-redes {
+    background-image: none; 
+    background-color: #62A6E7; 
+    display: flex;
+    justify-content: center; 
+    padding: 20px 0; 
+}
+
+.box-redes a {
+    width: 60px;
+    height: 60gitpx;
     background-color: #62A6E7;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+    margin: 0 10px; 
+    text-decoration: none;
 }
 
 header {
     background-color: #88B4E5;
-  
 }
 
 .botonDescubrila {
@@ -66,19 +78,20 @@ header {
     padding: 10px;
     margin: 100px;
     display: inline-block;
-
 }
 
-footer{
-    background-color: #758812;
-  text-align: center;
+footer {
+    background-color: #88B4E5;
+    text-align: center;
 }
-.pagina-contacto
-body, html {
+
+.pagina-contacto body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
+
 body {
     background-image: url(/img/cataratas.jpg);
     background-size: cover;
@@ -87,19 +100,23 @@ body {
 
 
 header {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
 }
+
 footer {
-    background-color: rgba(255,255, 255, 0.1); /* Fondo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
 }
- h2, header, footer,
+
+h2,
+header,
+footer,
 p {
     text-align: center;
-    color: white; 
+    color: white;
     background-color: #62A6E7;
-    display:block;
+    display: block;
     padding: 10px;
     font-weight: bold;
     text-decoration: none;
@@ -111,13 +128,14 @@ p {
 
 
 .formulario-contacto {
-    background-color: rgba(255, 255, 255, 0.8); 
-    max-width: 600px; 
-    margin: 0 auto; 
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .formulario-contacto .row {
     display: flex;
     flex-wrap: wrap;
@@ -158,7 +176,10 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-    .formulario-contacto .col-25, .formulario-contacto .col-75, .formulario-contacto input[type=submit] {
+
+    .formulario-contacto .col-25,
+    .formulario-contacto .col-75,
+    .formulario-contacto input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
