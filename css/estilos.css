@@ -10,6 +10,47 @@
     font-style: normal;
 }
 
+/* para dispositovs moviles*/
+@media screen and (max-width: 600px) {
+    .formulario-contacto .col-25,
+    .formulario-contacto .col-75,
+    .formulario-contacto input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:1023px){
+  /* Para tablet: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+@media screen and (min-width: 1023px) {
+  /* Para computadora de escritorio: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
 #banner {
     background-color: #cccccc;
     background-image: url("./img/cataratas-del-iguazu-lado-argent.jpg");
@@ -93,9 +134,11 @@ html {
 }
 
 body {
-    background-image: url(/img/cataratas.jpg);
-    background-size: cover;
+    background-image: url("/ProyectoPython/img/cataratas.jpg");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
 }
 
 
@@ -175,12 +218,4 @@ p {
     background-color: #45a049;
 }
 
-@media screen and (max-width: 600px) {
 
-    .formulario-contacto .col-25,
-    .formulario-contacto .col-75,
-    .formulario-contacto input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-}
