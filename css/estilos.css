@@ -207,7 +207,7 @@ header {
 footer {
     background-color: #88B4E5;
     text-align: center;
-   
+
 }
 
 .pagina-contacto body,
@@ -404,14 +404,39 @@ header nav a:hover {
     background-color: #45a049;
     font-size: large;
     display: inline-block;
-   /* flex-direction: row;
+    /* flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;*/
     padding: 10px;
-   
+
 }
 
-.mapa a:hover{
-color:#2B4015;    
+.mapa a:hover {
+    color: #2B4015;
+
+}
+
+.parrafoExcursiones {
+    background-color: white;
+    color: #2B4015;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.imgExcursiones {
+    width: 300;
+    padding: 30px;
+
+
+}
+
+#app {
+    text-align: center;
+}
+
+.tituloExcursiones {
+    background-color: #45a049;
+   
 
 }
