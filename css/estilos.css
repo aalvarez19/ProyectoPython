@@ -358,6 +358,10 @@ p {
 
 }
 
+.tarjeta img:hover{
+    transform: scale(1.1);
+
+}
 .tarjeta a {
     color: #2B4015;
     font-size: 25px;
