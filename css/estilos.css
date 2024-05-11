@@ -12,6 +12,7 @@
 
 /* para dispositovs moviles*/
 @media screen and (max-width: 600px) {
+
     .formulario-contacto .col-25,
     .formulario-contacto .col-75,
     .formulario-contacto input[type=submit] {
@@ -19,36 +20,109 @@
         margin-top: 0;
     }
 }
-@media only screen and (min-width: 768px) and (max-width:1023px){
-  /* Para tablet: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+    /* Para tablet: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1023px) {
-  /* Para computadora de escritorio: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+
+    /* Para computadora de escritorio: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
 }
 
 #banner {
@@ -59,21 +133,25 @@
     background-size: cover;
     height: 1000px;
     position: relative;
-    text-align: center; /* Centra horizontalmente los elementos dentro de #banner */
+    text-align: center;
+    /* Centra horizontalmente los elementos dentro de #banner */
 }
 
 h1 {
     font-size: 50px;
     font-weight: bold;
-    padding: 10%;
+    padding: 3%;
 }
 
 h2 {
     font-size: 30px;
-    font-style: italic;
+
+    text-align: center;
+    background-color: transparent;
+    padding: 1%;
 }
 
-.botonLogin {
+.botonContacto {
     background-color: transparent;
     border: 3px solid white;
     padding: 10px;
@@ -85,45 +163,51 @@ a {
     padding: 10px;
 }
 
-#banner a {
+/*#banner a {
     color: white;
     text-decoration: none;
-}
 
-.box-redes {
-    background-image: none; 
-    background-color: #62A6E7; 
-    display: flex;
-    justify-content: center; 
-    padding: 20px 0; 
-}
+}*/
 
-.box-redes a {
-    width: 60px;
-    height: 60gitpx;
+.redes {
+    background-image: none;
     background-color: #62A6E7;
     display: flex;
     justify-content: center;
+    padding: 20px 0;
+}
+
+.redes a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    color: #fff;
-    margin: 0 10px; 
+    margin: 0 10px;
     text-decoration: none;
+
+}
+
+.redes a:hover {
+    color: #2B4015;
+
 }
 
 header {
     background-color: #88B4E5;
 }
 
-.botonDescubrila {
+/*.botonDescubrila {
     background-color: #2B4015;
     padding: 10px;
     margin: 100px;
     display: inline-block;
-}
+}*/
 
 footer {
     background-color: #88B4E5;
     text-align: center;
+
 }
 
 .pagina-contacto body,
@@ -134,7 +218,7 @@ html {
 }
 
 body {
-    background-image: url("/ProyectoPython/img/cataratas.jpg");
+    /*background-image: url("/ProyectoPython/img/cataratas.jpg");*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,17 +226,17 @@ body {
 }
 
 
-header {
+/*header {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
 }
-
-footer {
+*/
+/*footer {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
-}
+}*/
 
-h2,
+
 header,
 footer,
 p {
@@ -179,6 +263,7 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .formulario-contacto .row {
     display: flex;
     flex-wrap: wrap;
@@ -202,6 +287,7 @@ p {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    color: black;
 }
 
 .formulario-contacto input[type=submit] {
@@ -218,7 +304,7 @@ p {
     background-color: #45a049;
 }
 
-.colordefondo{
+.colordefondo {
     margin: 0;
     padding: 1%;
     background-color: #2B4015;
@@ -228,18 +314,133 @@ p {
     justify-content: space-around;
     align-items: center;
 
-    
+
 }
 
-.immg{
+.immg {
     text-align: center;
-    background-color:#2B4015;
+    background-color: #2B4015;
     border-radius: 2%;
     box-shadow: #2B4015;
 }
 
-.h2color{
+.h2color {
     padding: 2%;
     background-color: #DAD89D;
     color: #2B4015;
+}
+
+.tarjeta {
+    width: 500px;
+    padding: 15px;
+    float: left;
+
+
+
+}
+
+#container {
+    background-color: #dad89dab;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+
+
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.tarjeta img:hover{
+    transform: scale(1.1);
+
+}
+.tarjeta a {
+    color: #2B4015;
+    font-size: 25px;
+    font-weight: 500;
+
+
+
+
+
+}
+
+footer a:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: animate__pulse;
+    animation-duration: 2s;
+}
+
+nav a img {
+    width: 20px;
+    margin: 5px;
+    vertical-align: middle;
+
+}
+
+
+
+#tituloverde {
+    background-color: #2B4015;
+}
+
+header nav a:hover {
+    color: #2B4015;
+    font-weight: bold;
+}
+
+.botonContacto:hover {
+    border-color: #2B4015;
+
+}
+
+.mapa {
+    text-align: center;
+    background-color: #45a049;
+    font-size: large;
+    display: inline-block;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;*/
+    padding: 10px;
+
+}
+
+.mapa a:hover {
+    color: #2B4015;
+
+}
+
+.parrafoExcursiones {
+    background-color: white;
+    color: #2B4015;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.imgExcursiones {
+    width: 300;
+    padding: 30px;
+
+
+}
+
+#app {
+    text-align: center;
+}
+
+.tituloExcursiones {
+    background-color: #45a049;
+   
+
 }

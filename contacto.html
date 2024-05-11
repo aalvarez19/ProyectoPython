@@ -16,64 +16,83 @@
 
 
 <body class="pagina-contacto">
+    <style>
+        .pagina-contacto {
+            background-image: url(./img/cataratas.jpg);
+        }
+    </style>
+    <header>
 
-    </head>
+    </header>
 
-    <body>
 
-        <h2>FORMULARIO DE CONTACTO</h2>
 
-        <p>Estamos a la espera de tu consulta.
+<h2 id="tituloverde">FORMULARIO DE CONTACTO</h2>
 
-            Completa el siguiente formulario y en breve estaremos en contacto</p>
+    <p>
+    Estamos a la espera de tu consulta.
+    <br>
+    Completa el siguiente formulario y en breve estaremos en contacto
+    </p>
 
-        <div class="formulario-contacto">
-                <form action="/action_page.php">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="fname">Nombre</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Escribe tu nombre aqui...">
-                    </div>
+    <div class="formulario-contacto">
+        <form action="./show_data.html">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Nombre</label>
                 </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="lname">Apellido</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Escribe tu apellido aqui...">
-                    </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Escribe tu nombre aqui...">
                 </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="lname">Asunto</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Escribi el asunto aqui...">
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Apellido</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Escribe tu apellido aqui...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Escribe tu mail aqui...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Asunto</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="asunto" name="asunto" placeholder="Escribi el asunto aqui...">
 
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="subject">Consulta</label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="...." style="height:200px"></textarea>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-        </div>
+            </div>
 
-        <footer>
-            <p>Sitio desarrollado para Codo a Codo - 2024</p>
-        </footer>
-        
-    </body>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Consulta</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="...." style="height:200px"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="./js/main.js"></script>
+
+</body>
 
 
 </html>
