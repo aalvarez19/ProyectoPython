@@ -11,20 +11,22 @@
 }
 
 /* para dispositovs moviles*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     .formulario-contacto .col-25,
     .formulario-contacto .col-75,
     .formulario-contacto input[type=submit] {
         width: 100%;
         margin-top: 0;
-    }
+    }    
+    
 }
 
 @media only screen and (min-width: 768px) and (max-width:1023px) {
 
     /* Para tablet: */
-    .col-1 {
+
+        .col-1 {
         width: 8.33%;
     }
 
@@ -76,6 +78,8 @@
 @media screen and (min-width: 1023px) {
 
     /* Para computadora de escritorio: */
+
+   
     .col-1 {
         width: 8.33%;
     }
@@ -195,6 +199,7 @@ a {
 
 header {
     background-color: #88B4E5;
+    text-align: center;
 }
 
 /*.botonDescubrila {
@@ -210,41 +215,22 @@ footer {
 
 }
 
+/*CONTACTO.HTML*/
 .pagina-contacto body,
 html {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: #62A6E7;
 }
-
-body {
-    /*background-image: url("/ProyectoPython/img/cataratas.jpg");*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
-}
-
-
-/*header {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-}
-*/
-/*footer {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-}*/
-
 
 header,
-footer,
-p {
+footer {
     text-align: center;
     color: white;
     background-color: #62A6E7;
     display: block;
-    padding: 10px;
+    padding: 30px;
     font-weight: bold;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
@@ -253,16 +239,43 @@ p {
     font-style: normal;
 }
 
+.titulo-contacto
+ {
+    text-align: center;
+    color:#f3c53c;
+    background-color: #62A6E7;
+    display: block;
+    padding: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2.5em;
+}
+
+.texto-contacto {
+    text-align: center;
+    color:#2B4015;
+    background-color: #62A6E7;
+    display: block;
+    padding: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: normal;
+}
 
 .formulario-contacto {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url("/ProyectoPython/img/cataratas.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
+}
 
 .formulario-contacto .row {
     display: flex;
@@ -273,6 +286,7 @@ p {
 .formulario-contacto .col-25 {
     flex: 25%;
     margin-right: 10px;
+
 }
 
 .formulario-contacto .col-75 {
@@ -304,7 +318,108 @@ p {
     background-color: #45a049;
 }
 
-.colordefondo {
+.formulario-contacto select {
+    color: black;
+    background-color: #eef1f4;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario-contacto option {
+    color: black;
+}
+
+/*TARIFAS.HTML*/
+.pagina-tarifas {
+    background-color: #62A6E7;
+}
+
+.tarifasyhorarios,
+
+.sidebar
+.articulo{
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #62A6E7;
+
+}
+.tarifasyhorarios > .header2,
+.tarifasyhorarios > .contenido,
+.tarifasyhorarios > .sidebar,
+.tarifasyhorarios > .articulo {
+    background-color: #62A6E7;
+    padding: 20px;
+    border: 1px solid  #f3c53c;
+}
+.tarifasyhorarios > .header2{
+color: white;
+grid-column:1/4;
+}
+.tarifasyhorarios > .contenido{
+    grid-column: span 2;
+}
+.contenido > .articulo {
+    padding: 8px;
+    margin-top: 5px;
+    }
+.tarifasyhorarios > .sidebar {
+    grid-column: span 1;
+}
+
+/*TABLA ARTICULO*/
+.articulo table {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+}
+.articulo table th {
+    font-weight: bold; 
+   color:#2B4015;
+}
+.articulo table td,
+.articulo table th {
+    padding: 5px; 
+}
+
+.articulo h3 {
+    font-weight: bold; 
+    text-align: center;
+    color: #f3c53c;
+}
+
+.articulo table th:first-child,
+.articulo table td:first-child {
+    width: 80%; 
+}
+
+.articulo table th:last-child,
+.articulo table td:last-child {
+    width: 20%; 
+}
+
+.sidebar div {
+    margin-bottom: 10px; 
+    text-align: center;
+}
+.sidebar h4{
+    color:#f3c53c;
+    font-weight: bold; 
+    text-align: center;
+}
+.sidebar p {
+    color:#2B4015;
+    text-decoration: underline;
+    font-weight: 500;
+    }
+/*FIN PAGINA TARIFAS*/
+
+ .colordefondo {
     margin: 0;
     padding: 1%;
     background-color: #2B4015;
@@ -358,18 +473,15 @@ p {
 
 }
 
-.tarjeta img:hover{
+.tarjeta img:hover {
     transform: scale(1.1);
 
 }
+
 .tarjeta a {
     color: #2B4015;
     font-size: 25px;
     font-weight: 500;
-
-
-
-
 
 }
 
@@ -385,12 +497,6 @@ nav a img {
     margin: 5px;
     vertical-align: middle;
 
-}
-
-
-
-#tituloverde {
-    background-color: #2B4015;
 }
 
 header nav a:hover {
@@ -441,6 +547,6 @@ header nav a:hover {
 
 .tituloExcursiones {
     background-color: #45a049;
-   
+
 
 }

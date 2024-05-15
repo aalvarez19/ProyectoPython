@@ -8,49 +8,49 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="./img/cascada.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/acfa384147.js" crossorigin="anonymous"></script>
+    <link rel="icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 </head>
 
 
 <body class="pagina-contacto">
-    <style>
-        .pagina-contacto {
-            background-image: url(./img/cataratas.jpg);
-        }
-    </style>
+
     <header>
+
 
     </header>
 
+    <h2 class="titulo-contacto">FORMULARIO DE CONTACTO</h2>
 
-
-<h2 id="tituloverde">FORMULARIO DE CONTACTO</h2>
-
-    <p>
-    Estamos a la espera de tu consulta.
-    <br>
-    Completa el siguiente formulario y en breve estaremos en contacto
+    <p class="texto-contacto">
+        Estamos a la espera de tu consulta.
+        <br>
+        Completa el siguiente formulario y en breve estaremos en contacto
     </p>
 
     <div class="formulario-contacto">
-        <form action="./show_data.html">
+         <form id="form">
             <div class="row">
                 <div class="col-25">
-                    <label for="fname">Nombre</label>
+                    <label for="nombre">Nombre</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="Escribe tu nombre aqui...">
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aqui...">
                 </div>
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="lname">Apellido</label>
+                    <label for="apellido">Apellido</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="lname" name="lastname" placeholder="Escribe tu apellido aqui...">
+                    <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido aqui...">
                 </div>
             </div>
             <div class="row">
@@ -63,33 +63,38 @@
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="lname">Asunto</label>
+                    <label for="pais">País:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="asunto" name="asunto" placeholder="Escribi el asunto aqui...">
-
+                    <select id="pais" name="pais" required>
+                        <option value="" disabled selected>Selecciona tu país</option>
+                    </select>
                 </div>
             </div>
-
+           
             <div class="row">
                 <div class="col-25">
-                    <label for="subject">Consulta</label>
+                    <label for="consulta">Consulta</label>
                 </div>
                 <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="...." style="height:200px"></textarea>
+                    <textarea id="consulta" name="consulta" placeholder=".........." style="height:200px"></textarea>
                 </div>
             </div>
+          
             <br>
             <div class="row">
                 <input type="submit" value="Enviar">
             </div>
         </form>
+        <!-- Mensaje enviado -->
+    <div id="mensajeEnviado" style="display: none; font-weight: bold; color: #000;">Mensaje enviado!</div>
     </div>
-
+    
+  
     <footer>
 
     </footer>
-
+   <script src="./js/contacto.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
