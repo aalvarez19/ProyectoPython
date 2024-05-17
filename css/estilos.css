@@ -15,25 +15,90 @@
 
     .formulario-contacto .col-25,
     .formulario-contacto .col-75,
-    .formulario-contacto input[type=submit] {
+    .formulario-contacto input[type=submit] #container {
         width: 100%;
         margin-top: 0;
-    }    
-    
+    }
+
 }
 
-@media only screen and (min-width: 768px) and (max-width:1023px) {
+/* For mobile phones: */
+[class*="col-"] {
+    /*a todas las clases que comiencen con col- ponele 100%*/
+    width: 100%;
+}
 
-    /* Para tablet: */
+@media only screen and (min-width: 600px) {
 
-        .col-1 {
+    /* entonces >= 600px  */
+    /* For tablets: */
+    .col-s-1 {
         width: 8.33%;
     }
 
+    /* 100/12  */
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    /* 100/12*2  */
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+
+    /*  100/12*12  */
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* entonces >=   */
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    /*  100/12  */
     .col-2 {
         width: 16.66%;
     }
 
+    /* 100/2*2  */
     .col-3 {
         width: 25%;
     }
@@ -75,11 +140,9 @@
     }
 }
 
-@media screen and (min-width: 1023px) {
+/*@media only screen and (min-width: 768px) and (max-width:1023px) {
 
-    /* Para computadora de escritorio: */
-
-   
+    /* Para tablet: 
     .col-1 {
         width: 8.33%;
     }
@@ -126,20 +189,65 @@
 
     .col-12 {
         width: 100%;
-    }
-}
+    }*/
 
-#banner {
-    background-color: #cccccc;
-    background-image: url("./img/cataratas-del-iguazu-lado-argent.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
-    position: relative;
-    text-align: center;
-    /* Centra horizontalmente los elementos dentro de #banner */
-}
+
+
+/*@media screen and (min-width: 1023px) {
+
+    /* Para computadora de escritorio: */
+
+
+/* .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }*/
+
+
+
 
 h1 {
     font-size: 50px;
@@ -239,10 +347,9 @@ footer {
     font-style: normal;
 }
 
-.titulo-contacto
- {
+.titulo-contacto {
     text-align: center;
-    color:#f3c53c;
+    color: #f3c53c;
     background-color: #62A6E7;
     display: block;
     padding: 6px;
@@ -255,7 +362,7 @@ footer {
 
 .texto-contacto {
     text-align: center;
-    color:#2B4015;
+    color: #2B4015;
     background-color: #62A6E7;
     display: block;
     padding: 6px;
@@ -338,8 +445,7 @@ footer {
 
 .tarifasyhorarios,
 
-.sidebar
-.articulo{
+.sidebar .articulo {
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
@@ -349,26 +455,31 @@ footer {
     background-color: #62A6E7;
 
 }
-.tarifasyhorarios > .header2,
-.tarifasyhorarios > .contenido,
-.tarifasyhorarios > .sidebar,
-.tarifasyhorarios > .articulo {
+
+.tarifasyhorarios>.header2,
+.tarifasyhorarios>.contenido,
+.tarifasyhorarios>.sidebar,
+.tarifasyhorarios>.articulo {
     background-color: #62A6E7;
     padding: 20px;
-    border: 1px solid  #f3c53c;
+    border: 1px solid #f3c53c;
 }
-.tarifasyhorarios > .header2{
-color: white;
-grid-column:1/4;
+
+.tarifasyhorarios>.header2 {
+    color: white;
+    grid-column: 1/4;
 }
-.tarifasyhorarios > .contenido{
+
+.tarifasyhorarios>.contenido {
     grid-column: span 2;
 }
-.contenido > .articulo {
+
+.contenido>.articulo {
     padding: 8px;
     margin-top: 5px;
-    }
-.tarifasyhorarios > .sidebar {
+}
+
+.tarifasyhorarios>.sidebar {
     grid-column: span 1;
 }
 
@@ -378,48 +489,53 @@ grid-column:1/4;
     padding: 20px;
     text-align: left;
 }
+
 .articulo table th {
-    font-weight: bold; 
-   color:#2B4015;
+    font-weight: bold;
+    color: #2B4015;
 }
+
 .articulo table td,
 .articulo table th {
-    padding: 5px; 
+    padding: 5px;
 }
 
 .articulo h3 {
-    font-weight: bold; 
+    font-weight: bold;
     text-align: center;
     color: #f3c53c;
 }
 
 .articulo table th:first-child,
 .articulo table td:first-child {
-    width: 80%; 
+    width: 80%;
 }
 
 .articulo table th:last-child,
 .articulo table td:last-child {
-    width: 20%; 
+    width: 20%;
 }
 
 .sidebar div {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     text-align: center;
 }
-.sidebar h4{
-    color:#f3c53c;
-    font-weight: bold; 
+
+.sidebar h4 {
+    color: #f3c53c;
+    font-weight: bold;
     text-align: center;
 }
+
 .sidebar p {
-    color:#2B4015;
+    color: #2B4015;
     text-decoration: underline;
     font-weight: 500;
-    }
+}
+
 /*FIN PAGINA TARIFAS*/
 
- .colordefondo {
+.colordefondo {
     margin: 0;
     padding: 1%;
     background-color: #2B4015;
@@ -454,22 +570,45 @@ grid-column:1/4;
 
 }
 
-#container {
-    background-color: #dad89dab;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
-
+#banner {
+    background-color: #cccccc;
+    background-image: url("/ProyectoPython/img/cataratas-del-iguazu-lado-argent.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 1200px;*/
+    position: relative;
+    text-align: center;
+    /* Centra horizontalmente los elementos dentro de #banner */
 }
 
 
 
+#container {
+    background-color: #dad89dab;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    margin: 5%;
+    align-items: center;
+
+}
+
+
+.tarjeta {
+    float: left;
+    padding: 15px;
+    height: 300px;
+
+}
+
 .tarjeta img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 25px;
+    padding: 15px;
 
 }
 
@@ -514,11 +653,12 @@ header nav a:hover {
     background-color: #45a049;
     font-size: large;
     display: inline-block;
-    /* flex-direction: row;
+    /*flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;*/
+    justify-content: center;
+    align-items: center;*/
     padding: 10px;
-
+    margin: 30px;
 }
 
 .mapa a:hover {
@@ -531,22 +671,36 @@ header nav a:hover {
     color: #2B4015;
     font-weight: 500;
     font-size: 20px;
-
+   
 }
 
 .imgExcursiones {
-    width: 300;
-    padding: 30px;
+    /* width: 300;
+    padding: 30px;*/
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
 
 
 }
 
 #app {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    background-color: #eeecbe;
+    
 }
 
 .tituloExcursiones {
-    background-color: #45a049;
+    background-color: #2B4015;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
 
 
 }
