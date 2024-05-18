@@ -535,40 +535,117 @@ footer {
 
 /*FIN PAGINA TARIFAS*/
 
-.colordefondo {
-    margin: 0;
-    padding: 1%;
+/* PAGINA INTERÉS */
+
+.titulos {
+    color:#ffffff;
     background-color: #2B4015;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-
-}
-
-.immg {
-    text-align: center;
-    background-color: #2B4015;
-    border-radius: 2%;
-    box-shadow: #2B4015;
-}
-
-.h2color {
-    padding: 2%;
+    }
+    
+    #contenedor {
     background-color: #DAD89D;
-    color: #2B4015;
-}
-
-.tarjeta {
-    width: 500px;
-    padding: 15px;
-    float: left;
-
-
-
-}
+        ;
+    
+    }
+    
+    .cont2 {
+        display: flex;
+        align-items: center;
+        background-color: #2b401521;
+        border-radius: 50px;
+        margin-left: 1%;
+        margin-right: 1%;
+        box-shadow: #2B4015;
+    }
+    
+    .cont1 {
+        display: flex;
+        align-items: center;
+        background-color: #2b401521;
+        border-radius: 50px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .cont3 {
+        display: flex;
+        align-items: center;
+        background-color: #2b401521;
+        border-radius: 50px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    
+    .cont4 {
+        display: flex;
+        align-items: center;
+        background-color: #2b401521;
+        border-radius: 50px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .cont5 {
+        display: flex;
+        align-items: center;
+        background-color: #2b401521;
+        border-radius: 50px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    
+    .cont6 {
+        display: flex;
+        align-items: center;
+        background-color: #2b401521;
+        border-radius: 50px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .cont7 {
+        display: flex;
+        align-items: center;
+        background-color: #2b401521;
+        border-radius: 50px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .pp{
+        color: #2B4015;
+        text-align: justify;
+        padding: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .texto {
+        color: #2B4015;
+        margin: 2%;
+        text-align: justify;
+    
+    }
+    
+    .imagenint {
+    
+        width: 40%;
+        height: 30%;
+        margin: 2%;
+        border-radius: 8%;
+        cursor: pointer;
+    transition: 1.5s;
+    
+    }
+    
+    .imagenint:hover{
+        transform: scale(1.05);
+    transition: 1.5s;
+    }
+    
+    /* FIN PÁGINA INTERÉS */
 
 #banner {
     background-color: #cccccc;
