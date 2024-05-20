@@ -544,7 +544,7 @@ footer {
     
     #contenedor {
     background-color: #DAD89D;
-        ;
+        
     
     }
     
@@ -647,6 +647,9 @@ footer {
     
     /* FIN PÁGINA INTERÉS */
 
+
+    /* INDEX */
+
 #banner {
     background-color: #cccccc;
     background-image: url("/ProyectoPython/img/cataratas-del-iguazu-lado-argent.jpg");
@@ -674,13 +677,12 @@ footer {
 
 }
 
-
 .tarjeta {
-    float: left;
+    width: 500px;
     padding: 15px;
-    height: 300px;
-
+    float: left;
 }
+
 
 .tarjeta img {
     width: 100%;
@@ -744,7 +746,7 @@ header nav a:hover {
 }
 
 .parrafoExcursiones {
-    background-color: white;
+    background-color: #DAD89D;
     color: #2B4015;
     font-weight: 500;
     font-size: 20px;
@@ -768,7 +770,7 @@ header nav a:hover {
     /*flex-wrap: wrap;
     /*justify-content: center;*/
     /*align-items: center;*/
-    background-color: #eeecbe;
+    background-color: #DAD89D;
     
 }
 
