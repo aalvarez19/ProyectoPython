@@ -1,10 +1,14 @@
 document.querySelector("header").innerHTML=`
 <nav>
-<a href="index.html">Inicio</a>
+<div class="logo">
+<a href ="index.html"><img src="./img/LOGO NUEVO-01.png" alt=""></a>
+</div>
+<div class="linksNav">
 <a href="excursiones.html">Excursiones</a>
 <a href="interes.html">Sitios de interés</a>
 <a href="tarifas.html">Tarifas y horarios</a>
 <a href="contacto.html" class="botonContacto">Contacto</a>
+</div>
 </nav>
 `
 
