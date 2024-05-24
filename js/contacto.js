@@ -52,3 +52,9 @@ function btnSubmit(event) {
     window.location.href = mailtoLink;
 }
 });
+
+//archivo
+document.getElementById('archivo').addEventListener('change', function() {
+    var fileName = this.files[0] ? this.files[0].name : 'No se ha seleccionado archivo';
+    document.getElementById('file-name').textContent = fileName;
+});
