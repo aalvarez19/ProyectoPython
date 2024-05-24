@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -12,13 +13,16 @@
 
 /* para dispositovs moviles*/
 @media screen and (max-width: 768px) {
-
+   
     .formulario-contacto .col-25,
     .formulario-contacto .col-75,
     .formulario-contacto input[type=submit] #container {
         width: 100%;
         margin-top: 0;
     }
+   
+  
+
 
 }
 
@@ -329,7 +333,8 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #62A6E7;
+    background-color:  rgb(218, 216, 157);
+   
 }
 
 
@@ -345,24 +350,25 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
+.display-titulo {
+    text-align: center;
+}
 
 .titulo-contacto {
+    background-color: #2B4015;
+    display: inline-block;
     text-align: center;
-    color: #f3c53c;
-    background-color: #62A6E7;
-    display: block;
-    padding: 6px;
+    padding: 2%;
+    margin: 20px;
+    border-radius: 10px;
     font-weight: 600;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 2.5em;
 }
+
 
 .texto-contacto {
     text-align: center;
     color: #2B4015;
-    background-color: #62A6E7;
+    background-color:  rgb(218, 216, 157);
     display: block;
     padding: 6px;
     font-weight: 600;
@@ -374,12 +380,16 @@ footer {
 
 .formulario-contacto {
     background-image: url("/ProyectoPython/img/cataratas.jpg");
-    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.2);
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    
+
 
 }
 
@@ -411,17 +421,18 @@ footer {
 }
 
 .formulario-contacto input[type=submit] {
-    background-color: #62A6E7;
+    background-color: #2B4015;
     color: white;
     padding: 12px 20px;
-    border: none;
+    border: 1px solid;
     border-radius: 4px;
     cursor: pointer;
     float: right;
 }
 
 .formulario-contacto input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: rgb(218, 216, 157);
+    color:black;
 }
 
 .formulario-contacto select {
@@ -437,31 +448,60 @@ footer {
     color: black;
 }
 
-/*TARIFAS.HTML*/
-.pagina-tarifas {
-    background-color: #62A6E7;
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color:#2B4015;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 16px;
 }
 
-.tarifasyhorarios,
+.custom-file-upload:hover {
+    background-color: rgb(218, 216, 157);
+    color:black;
+}
 
-.sidebar .articulo {
+#archivo {
+    display: none;
+}
+
+#file-name {
+    display: block;
+    margin-top: 10px;
+    color:black;
+        
+}
+
+
+
+
+/*TARIFAS.HTML*/
+.pagina-tarifas {
+    background-color:rgb(218, 216, 157);
+}
+
+.tarifasyhorarios {
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #62A6E7;
+    background-color:rgb(218, 216, 157);
 
 }
 
 .tarifasyhorarios>.header2,
 .tarifasyhorarios>.contenido,
 .tarifasyhorarios>.sidebar,
-.tarifasyhorarios>.articulo {
-    background-color: #62A6E7;
+.tarifasyhorarios>.articulo,
+.tarifasyhorarios>.table-container {
+    background-color:#2B4015;
     padding: 20px;
-    border: 1px solid #f3c53c;
+    border: 1px solid white;
 }
 
 .tarifasyhorarios>.header2 {
@@ -469,10 +509,12 @@ footer {
     grid-column: 1/4;
 }
 
-.tarifasyhorarios>.contenido {
+.tarifasyhorarios>.contenido  {
     grid-column: span 2;
+  
 }
 
+.contenido>.table-container,
 .contenido>.articulo {
     padding: 8px;
     margin-top: 5px;
@@ -482,36 +524,38 @@ footer {
     grid-column: span 1;
 }
 
-/*TABLA ARTICULO*/
-.articulo table {
+/*TABLA y ARTICULO*/
+
+.table-container table {
     width: 100%;
     padding: 20px;
     text-align: left;
 }
 
-.articulo table th {
+.table-container table th {
     font-weight: bold;
-    color: #2B4015;
+    color: rgb(218, 216, 157);
 }
 
-.articulo table td,
-.articulo table th {
+.table-container table td,
+.table-container table th {
     padding: 5px;
 }
 
+.contenido h3,
 .articulo h3 {
     font-weight: bold;
     text-align: center;
-    color: #f3c53c;
+    color: rgb(218, 216, 157);
 }
 
-.articulo table th:first-child,
-.articulo table td:first-child {
+.table-container table th:first-child,
+.table-container table td:first-child {
     width: 80%;
 }
 
-.articulo table th:last-child,
-.articulo table td:last-child {
+.table-container table th:last-child,
+.table-container table td:last-child {
     width: 20%;
 }
 
@@ -521,13 +565,13 @@ footer {
 }
 
 .sidebar h4 {
-    color: #f3c53c;
+    color: rgb(218, 216, 157);
     font-weight: bold;
     text-align: center;
 }
 
 .sidebar p {
-    color: #2B4015;
+    color: rgb(218, 216, 157);
     text-decoration: underline;
     font-weight: 500;
 }
