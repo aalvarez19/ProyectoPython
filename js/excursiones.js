@@ -4,7 +4,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-            url: "./js/excursiones.json",
+            url: "https://cataratas.pythonanywhere.com/excursiones",
             datos: [],
             error:false,
         }
@@ -28,3 +28,4 @@ const { createApp } = Vue
         this.fetchData(this.url)
     }
 }).mount('#app')
+
